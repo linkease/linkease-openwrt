@@ -10,7 +10,7 @@ include $(INCLUDE_DIR)/version.mk
 WEB_PATH:=www
 
 define Build/Prepare
-	echo -e "all:\n\techo 'jiajiaclient ok'" > "$(PKG_BUILD_DIR)/Makefile"
+	echo -e "all:\n\techo 'linkease ok'" > "$(PKG_BUILD_DIR)/Makefile"
 endef
 
 define Package/linkease/default
