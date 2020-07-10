@@ -1,0 +1,9 @@
+#!/bin/sh
+
+while true ; do
+  if ! pidof "link-ease" > /dev/null ; then
+    echo "linkease try running"
+    /sbin/link-ease > /tmp/linkease.log 2>&1 
+  fi
+  sleep 30
+done

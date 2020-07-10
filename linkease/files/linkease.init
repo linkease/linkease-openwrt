@@ -1,0 +1,20 @@
+#!/bin/sh /etc/rc.common
+
+START=99
+STOP=99
+
+start()
+{
+  start-stop-daemon -q -S -b -x /sbin/linkease-monitor
+}
+
+stop()
+{
+  killall linkease-monitor
+  killall link-ease
+}
+
+boot()
+{
+    start
+}
