@@ -6,7 +6,7 @@ linkease for common openwrt, arm and x86 supported
 ```
 curl -XGET https://firmware.koolshare.cn/binary/LinkEase/LinuxStorage/linkease.arm > ./linkease/files/link-ease
 chmod 755 ./linkease/files/link-ease
-cp -rf ./linkease [openwrt-source]package/network/utils/
+cp -rf ./linkease [openwrt-source]/package/network/utils/
 ```
 
 ## X86 使用方法
