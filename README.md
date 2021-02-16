@@ -1,19 +1,17 @@
 # openwrt-linkease
-linkease for common openwrt, arm and x86 supported
+linkease for openwrt, arm and aarch64 and x86 supported
 
-## ARM 使用方法
+## 使用方法
 
-```
-curl -XGET https://firmware.koolshare.cn/binary/LinkEase/LinuxStorage/linkease.arm > ./linkease/files/link-ease
-chmod 755 ./linkease/files/link-ease
-cp -rf ./linkease [openwrt-source]/package/network/utils/
-```
-
-## X86 使用方法
+把文件夹 linkease 拷贝到 Openwrt 源代码的 package/network/services 里面，拷贝之后为：
 
 ```
-curl -XGET https://firmware.koolshare.cn/binary/LinkEase/LinuxStorage/linkease.amd64 > ./linkease/files/link-ease
-chmod 755 ./linkease/files/link-ease
-cp -rf ./linkease [openwrt-source]/package/network/utils/
+tree ./package/network/services/linkease
+./package/network/services/linkease
+├── files
+│   ├── linkease.config
+│   ├── linkease.init
+│   └── linkease.uci-default
+└── Makefile
 ```
 
